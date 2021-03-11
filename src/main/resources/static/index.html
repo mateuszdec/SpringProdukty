@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkty</title>
+</head>
+<body>
+
+<div style="width: 500px; margin: 50px auto">
+
+    <a href="/lista">Wszystkie</a>
+    <a href="/lista?kategoria=AGD">AGD</a>
+    <a href="/lista?kategoria=FOOD">Spożywcze</a>
+    <a href="/lista?kategoria=OTHER">Inne</a>
+
+    <h2>Dodawanie produktu</h2>
+
+    <form action="/dodaj" method="post">
+
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Nazwa</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="name" placeholder="Nazwa">
+        </div>
+
+        <div class="form-group">
+            <label for="price">Cena</label>
+            <input type="number" class="form-control" id="price" name="price" placeholder="Cena">
+        </div>
+
+        <div class="form-group">
+            <label for="inputState">Kategoria</label>
+            <select id="inputState" class="form-control" name="category">
+                <option selected disabled>Wybierz...</option>
+                <option value="AGD">Art. gosp. domowego</option>
+                <option value="FOOD">Art. spożywcze</option>
+                <option value="OTHER">Inne</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Dodaj" class="btn btn-primary"/>
+
+    </form>
+
+</div>
+
+</body>
+</html>
